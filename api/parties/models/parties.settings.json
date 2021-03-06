@@ -2,26 +2,36 @@
   "kind": "collectionType",
   "collectionName": "parties",
   "info": {
-    "name": "Parties"
+    "name": "Parties",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "attributes": {
     "shortName": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 35,
+      "minLength": 5,
+      "default": "merengue party"
     },
     "date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "time": {
-      "type": "time"
+      "type": "time",
+      "required": true,
+      "default": "19:00:00"
     },
     "address": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 40,
+      "minLength": 5,
+      "default": "вулиця Алматинська, 74, Київ"
     },
     "description": {
       "type": "richtext"
@@ -34,6 +44,23 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "dj": {
+      "type": "string",
+      "minLength": 4,
+      "default": "dj Stribanek"
+    },
+    "balance": {
+      "type": "string",
+      "minLength": 5,
+      "required": true,
+      "maxLength": 30,
+      "default": "3 меренге, 1 сон"
+    },
+    "weekDay": {
+      "type": "string",
+      "minLength": 4,
+      "default": "воскресенье"
     }
   }
 }
