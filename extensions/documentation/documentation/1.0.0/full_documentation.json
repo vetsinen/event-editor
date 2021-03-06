@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/06/2021 12:05:20 PM"
+    "x-generation-date": "03/06/2021 1:57:41 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3719,7 +3719,8 @@
           "shortName",
           "date",
           "time",
-          "balance"
+          "balance",
+          "fee"
         ],
         "properties": {
           "id": {
@@ -3831,6 +3832,12 @@
             "default": "воскресенье",
             "minLength": 4
           },
+          "fee": {
+            "type": "string",
+            "default": "500 грн",
+            "maxLength": 40,
+            "minLength": 3
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3842,7 +3849,8 @@
           "shortName",
           "date",
           "time",
-          "balance"
+          "balance",
+          "fee"
         ],
         "properties": {
           "shortName": {
@@ -3883,6 +3891,12 @@
             "type": "string",
             "default": "воскресенье",
             "minLength": 4
+          },
+          "fee": {
+            "type": "string",
+            "default": "500 грн",
+            "maxLength": 40,
+            "minLength": 3
           },
           "published_at": {
             "type": "string",

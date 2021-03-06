@@ -520,7 +520,8 @@
           "shortName",
           "date",
           "time",
-          "balance"
+          "balance",
+          "fee"
         ],
         "properties": {
           "id": {
@@ -632,6 +633,12 @@
             "default": "воскресенье",
             "minLength": 4
           },
+          "fee": {
+            "type": "string",
+            "default": "500 грн",
+            "maxLength": 40,
+            "minLength": 3
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -643,7 +650,8 @@
           "shortName",
           "date",
           "time",
-          "balance"
+          "balance",
+          "fee"
         ],
         "properties": {
           "shortName": {
@@ -684,6 +692,12 @@
             "type": "string",
             "default": "воскресенье",
             "minLength": 4
+          },
+          "fee": {
+            "type": "string",
+            "default": "500 грн",
+            "maxLength": 40,
+            "minLength": 3
           },
           "published_at": {
             "type": "string",

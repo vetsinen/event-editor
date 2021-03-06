@@ -61,6 +61,13 @@
       "type": "string",
       "minLength": 4,
       "default": "воскресенье"
+    },
+    "fee": {
+      "type": "string",
+      "required": true,
+      "default": "500 грн",
+      "maxLength": 40,
+      "minLength": 3
     }
   }
 }
