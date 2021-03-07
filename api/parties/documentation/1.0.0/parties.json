@@ -625,19 +625,33 @@
           "balance": {
             "type": "string",
             "default": "3 меренге, 1 сон",
-            "maxLength": 30,
+            "maxLength": 40,
             "minLength": 5
-          },
-          "weekDay": {
-            "type": "string",
-            "default": "воскресенье",
-            "minLength": 4
           },
           "fee": {
             "type": "string",
             "default": "500 грн",
             "maxLength": 40,
             "minLength": 3
+          },
+          "city": {
+            "type": "string",
+            "default": "kyiv",
+            "enum": [
+              "kyiv",
+              "dnepr",
+              "lviv",
+              "odessa"
+            ]
+          },
+          "rank": {
+            "type": "string",
+            "default": "c",
+            "enum": [
+              "a",
+              "b",
+              "c"
+            ]
           },
           "published_at": {
             "type": "string",
@@ -685,19 +699,33 @@
           "balance": {
             "type": "string",
             "default": "3 меренге, 1 сон",
-            "maxLength": 30,
+            "maxLength": 40,
             "minLength": 5
-          },
-          "weekDay": {
-            "type": "string",
-            "default": "воскресенье",
-            "minLength": 4
           },
           "fee": {
             "type": "string",
             "default": "500 грн",
             "maxLength": 40,
             "minLength": 3
+          },
+          "city": {
+            "type": "string",
+            "default": "kyiv",
+            "enum": [
+              "kyiv",
+              "dnepr",
+              "lviv",
+              "odessa"
+            ]
+          },
+          "rank": {
+            "type": "string",
+            "default": "c",
+            "enum": [
+              "a",
+              "b",
+              "c"
+            ]
           },
           "published_at": {
             "type": "string",

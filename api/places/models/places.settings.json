@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "places",
+  "info": {
+    "name": "places"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

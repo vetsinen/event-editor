@@ -54,13 +54,8 @@
       "type": "string",
       "minLength": 5,
       "required": true,
-      "maxLength": 30,
+      "maxLength": 40,
       "default": "3 меренге, 1 сон"
-    },
-    "weekDay": {
-      "type": "string",
-      "minLength": 4,
-      "default": "воскресенье"
     },
     "fee": {
       "type": "string",
@@ -68,6 +63,25 @@
       "default": "500 грн",
       "maxLength": 40,
       "minLength": 3
+    },
+    "city": {
+      "type": "enumeration",
+      "enum": [
+        "kyiv",
+        "dnepr",
+        "lviv",
+        "odessa"
+      ],
+      "default": "kyiv"
+    },
+    "rank": {
+      "type": "enumeration",
+      "enum": [
+        "a",
+        "b",
+        "c"
+      ],
+      "default": "c"
     }
   }
 }
